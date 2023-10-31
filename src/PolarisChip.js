@@ -28,6 +28,7 @@ export class PolarisChip extends LitElement {
         background-image: url('https://static-00.iconduck.com/assets.00/external-link-icon-2048x2048-wo7lfgrz.png');
         background-size: cover;
         transition: transform 0.2s;
+        color: white;
       }
 
       .tile.white-on-picture:hover .button {
