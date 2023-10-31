@@ -17,7 +17,7 @@ export class PolarisChip extends LitElement {
 
   constructor() {
     super();
-    this.title = 'My test';
+    this.title = 'test';
   }
 
   render() {
