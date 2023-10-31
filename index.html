@@ -4,24 +4,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Put your description here.">
-  <base href="/">
-
+  <meta name="Description" content="Put your description here." />
+  <base href="/" />
   <style>
     html,
     body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
-      background-color: #ededed;
+      background-color: rgb(238, 243, 247);
+    }
+    .tile-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
     }
   </style>
   <title>polaris-chip</title>
 </head>
 
 <body>
-  <polaris-chip></polaris-chip>
-  <polaris-chip title="Cool stuff"></polaris-chip>
+  <div class="tile-container">
+    <polaris-chip tile="white-on-blue" name="88,000+ students"></polaris-chip>
+    <polaris-chip tile="navy-on-white" name="58%" additionalText="Of students are Pennsylvania residents." multiline="true"></polaris-chip>
+    <polaris-chip tile="white-on-gradient-blue" name="Students from 50 states and 145 countries"></polaris-chip>
+    <polaris-chip tile="white-on-picture" name="Check out Undergraduate Admissionss statistics" backgroundImage="https://www.psu.edu/psu-edu-assets/images/power-facts/penn-state-tuition.jpg" link="https://admissions.psu.edu/apply/statistics/" clickable="true" buttonbottom></polaris-chip>
+    <polaris-chip tile="white-on-blue" name="Nearly 10,000 international students"></polaris-chip>
+    <polaris-chip tile="navy-on-white" name="39%" additionalText="Of students are from diverse backgrounds." multiline="true"></polaris-chip>
+    <polaris-chip tile="white-on-navy" name="7,900+ faculty across all campuses"></polaris-chip>
+    <polaris-chip tile="white-on-navy" name="759,000+ alumni"></polaris-chip>
+    <polaris-chip tile="white-on-picture" name="See Penn State's Data Digest dashboards" backgroundImage="https://www.psu.edu/psu-edu-assets/images/power-facts/data-digest.jpg" link="https://datadigest.psu.edu/" clickable="true" buttonbottom></polaris-chip>
+  </div>
 
   <script type="module" src="./src/polaris-chip.js"></script>
 </body>
